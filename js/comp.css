@@ -1,0 +1,57 @@
+.cards {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+gap: 20px;
+margin-top: 20px;
+}
+
+
+.card {
+background: white;
+padding: 20px;
+border-radius: 16px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+
+body.dark .card {
+background: #1e1e1e;
+}
+
+
+.btn {
+padding: 12px 20px;
+border: none;
+border-radius: 10px;
+background: #5b7cff;
+color: white;
+cursor: pointer;
+}
+.course-card .status.active { color: green; }
+.course-card .status.completed { color: gray; }
+
+
+.assignment.pending { border-left: 5px solid orange; }
+.assignment.submitted { border-left: 5px solid green; }
+.assignment.late { border-left: 5px solid red; }
+
+
+.alert {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background: black;
+color: white;
+padding: 14px 20px;
+border-radius: 12px;
+}
+
+
+.profile-card input {
+display: block;
+margin-bottom: 12px;
+padding: 10px;
+border-radius: 8px;
+border: 1px solid #ddd;
+width: 100%;
+}
